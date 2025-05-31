@@ -1,0 +1,46 @@
+{
+  "name": "sign-verify-app",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "test": "jest --coverage",
+    "build:web": "npx expo export -p web",
+    "build:android": "eas build --platform android",
+    "build:ios": "eas build --platform ios",
+    "build:all": "eas build --platform all"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~5.0.4",
+    "@expo/vector-icons": "^14.1.0",
+    "@react-native-clipboard/clipboard": "^1.16.2",
+    "base-64": "^1.0.0",
+    "expo": "~53.0.9",
+    "expo-clipboard": "~7.1.4",
+    "expo-crypto": "~14.1.4",
+    "expo-status-bar": "~2.2.3",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.79.2",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-get-random-values": "~1.11.0",
+    "react-native-reanimated": "~3.17.4",
+    "react-native-web": "^0.20.0",
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^13.2.0",
+    "@types/jest": "^29.5.14",
+    "@types/react": "~19.0.10",
+    "jest": "^29.7.0",
+    "jest-expo": "~53.0.5",
+    "typescript": "~5.8.3"
+  },
+  "private": true
+}
